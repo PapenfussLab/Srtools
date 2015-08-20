@@ -1,0 +1,39 @@
+======
+Shorty
+======
+
+'Shorty' is a python package for dealing with short read (and other sequence) 
+data. It contains modules for dealing with generic annotation files and 
+features or intervals. It also includes modules for dealing with fasta, 
+quality and fastq data. Modules for maq alignment are in develepment.
+
+Documentation
+-------------
+API:
+http://bioinf.wehi.edu.au/~papenfuss/software/Shorty/api
+
+Code snippets:
+http://bioinf.wehi.edu.au/~papenfuss/software/Shorty/snippets
+
+Distribution
+------------
+Create an egg::
+
+   python setup.py bdist_egg
+
+Distribute::
+
+   rsync dist/* unix22:~/public_html/software/Shorty/eggs
+   rsync -r docs/* unix22:~/public_html/software/Shorty
+
+Install::
+
+   easy_install -f http://bioinf.wehi.edu.au/~papenfuss/software/Shorty -d $HOME/python Shorty
+
+Remote install::
+
+   ssh mac1072 'easy_install -f http://bioinf.wehi.edu.au/~papenfuss/software/Shorty -d $HOME/python Shorty'
+
+Testing
+-------
+Testing is not yet implemented, but should be soon.
